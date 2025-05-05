@@ -17,15 +17,12 @@ function addProduct(name, price) {
         throw new Error(`El producto "${name}" ya existe.`);
       }
     id++;
-    const newProduct = 
-            id: id,
-            name: name,
-            price: price,
-        };
-
+    const newProduct = {
+        id: id,
+        name: name,
+        price: price,
+      };
     products.push(newProduct);
-
-
 
 
 function removeProduct(productId) {
