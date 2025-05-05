@@ -1,8 +1,7 @@
 // resetProducts,  addProduct, removeProduct, getProducts, getProduct, updateProduct
 
-const products = 
-{'name': 'Product1', 'price': 100, 'id': 1};
-
+let products = [];
+let id = 0;
 
 function resetProducts() {
     products = [];
