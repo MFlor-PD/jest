@@ -22,6 +22,7 @@ function addProduct(name, price) {
         name: name,
         price: price,
       };
+    }
     products.push(newProduct);
 
 
