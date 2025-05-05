@@ -5,14 +5,28 @@ let id = 0;
 
 function resetProducts() {
     products = [];
+    id = 0;
 };
 
-function addProduct(product) {
-    if (!product || !product.name || !product.price) {
-        throw new Error('Invalid product');
-    }
-    products.push(product);
-}
+function addProduct(name, price) {
+    if (!name || price === undefined) {
+        throw new Error("El nombre y el precio del producto deben estar definidos.");
+      };
+      
+      if (products.some(product => product.name === name)) {
+        throw new Error(`El producto "${name}" ya existe.`);
+      }
+    id++;
+    const newProduct = 
+            id: id,
+            name: name,
+            price: price,
+        };
+
+    products.push(newProduct);
+
+
+
 
 function removeProduct(productId) {
     const index = products.findIndex(p => p.id === productId);
