@@ -4,7 +4,7 @@
   "description": "En este ejercicio, crearemos una aplicación simple de administración de productos usando JavaScript. Usaremos los test unitarios para asegurarnos de que nuestro código funcione según lo esperado. Para nuestro testing usaremos Jest.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "url": "https://github.com/MFlor-PD/jest/issues"
   },
   "homepage": "https://github.com/MFlor-PD/jest#readme",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^29.7.0"
   }
 }
