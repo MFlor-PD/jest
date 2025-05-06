@@ -1,4 +1,4 @@
-// resetProducts,  addProduct, removeProduct, getProducts, getProduct, updateProduct
+// removeProduct, getProducts, getProduct, updateProduct
 
 let products = [];
 let id = 0;
@@ -17,13 +17,14 @@ function addProduct(name, price) {
         throw new Error(`El producto "${name}" ya existe.`);
       }
     id++;
+    //console.log('ID incrementado a:', id);
     const newProduct = {
         id: id,
         name: name,
         price: price,
       };
+      products.push(newProduct);
     }
-    products.push(newProduct);
 
 
 function removeProduct(productId) {
